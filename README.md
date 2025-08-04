@@ -180,7 +180,7 @@ g++ -std=c++11 testhttpconn.cpp httpconn.cpp httpresponse.cpp httprequest.cpp ..
 ./testhttpconn
 
 # 测试Epoll
-g++ -std=c++11 testepoller.cpp -o testepoller epoller.cpp
+g++ -std=c++11 testepoller.cpp epoller.cpp -o testepoller 
 ./testepoller
 ```
 

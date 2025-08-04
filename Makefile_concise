@@ -1,0 +1,35 @@
+# 编译器设置
+CXX = g++
+CXXFLAGS = -std=c++11
+LIBS = -lmysqlclient
+
+# 目标文件
+TARGET = bin/webserver
+
+# 源文件
+SOURCES = code/main.cpp \
+          code/buffer/buffer.cpp \
+          code/http/httpconn.cpp \
+          code/http/httprequest.cpp \
+          code/http/httpresponse.cpp \
+          code/log/log.cpp \
+          code/pool/sqlconnpool.cpp \
+          code/server/epoller.cpp \
+          code/server/webserver.cpp \
+          code/timer/heaptimer.cpp
+
+# 默认目标
+all: $(TARGET)
+
+# 编译目标
+$(TARGET): $(SOURCES)
+	$(CXX) $(CXXFLAGS) $(SOURCES) -o $(TARGET) $(LIBS)
+
+# 清理
+clean:
+	rm -f $(TARGET)
+
+# 重新编译
+rebuild: clean all
+
+.PHONY: all clean rebuild 

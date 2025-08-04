@@ -1,0 +1,20 @@
+# 服务器配置
+port:1316
+mode:3
+timeout:60000
+optLinger:false
+
+# 数据库配置
+sqlPort:3306
+sqlUser:nieqishuai
+sqlPwd:1
+dbName:tinyweb
+
+# 连接池和线程池配置
+connPoolNum:12
+threadNum:12
+
+# 日志配置
+openLog:false
+logLevel:1
+logQueSize:1024 

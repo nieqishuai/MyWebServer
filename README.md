@@ -260,6 +260,7 @@ gdb bin/webserver_debug
 感谢以下开源项目的启发：
 - [TinyWebServer](https://github.com/qinguoyi/TinyWebServer)
 - [WebServer](https://github.com/markparticle/WebServer)
+- [WebServer](https://github.com/breeze1396/WebServer)
 - [WebBench](http://home.tiscali.cz/~cz210552/webbench.html)
 
 
